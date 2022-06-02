@@ -10,14 +10,14 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "employees")
+@Table(name = "employee data")
 @AllArgsConstructor
 @NoArgsConstructor
 
 public class Employees {
 
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
 
     private String firstName;
 
@@ -28,4 +28,6 @@ public class Employees {
     private String homeAddress;
 
     private String phoneNumber;
+
+    private String employeeDepartment;
 }
