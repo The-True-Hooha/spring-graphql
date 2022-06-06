@@ -2,14 +2,21 @@ server:
   port: 4040
 
 spring:
+  graphql:
+    graphiql:
+      enabled: true
   application:
     name: spring-graphql
   datasource:
-    url: jdbc:h2:file:/data/spring_graphql
+    url: jdbc:h2:file:~/test
+    username: user
     password: password
-    driver-class-name: org.h2.driver
+    driver-class-name: org.h2.Driver
   jpa:
     spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: 'create-drop'
   h2:
     console:
       enabled: true
+      path: /h2
