@@ -14,11 +14,11 @@ public interface EmployeeService {
     List<Employees> getAllEmployees();
 
     //get employee data id
-    Employees getEmployeeById(Long id) throws RuntimeException;
+    Employees getEmployeeById(Integer id) throws RuntimeException;
 
     //edit employee data
-    Employees editEmployeeData(Employees employees, Long id);
+    Employees editEmployeeData(Employees employees, Integer id);
 
     //delete employee data
-    void deleteEmployee(Long id) throws RuntimeException;
+    void deleteEmployee(Integer id) throws RuntimeException;
 }

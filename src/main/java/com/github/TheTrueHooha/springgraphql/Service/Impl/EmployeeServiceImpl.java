@@ -29,7 +29,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public Employees getEmployeeById(Long id) throws RuntimeException {
+    public Employees getEmployeeById(Integer id) throws RuntimeException {
         Optional<Employees> employees = employeeRepository.findById(id);
         if (employees.isPresent()){
             return employees.get();
@@ -39,7 +39,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public Employees editEmployeeData(Employees employees, Long id) {
+    public Employees editEmployeeData(Employees employees, Integer id) {
         Employees currentEmployees = employeeRepository.findById(id)
                 .orElseThrow( () -> new RuntimeException(HttpStatus.NOT_FOUND.toString()));
         currentEmployees.setFirstName(employees.getFirstName());
@@ -47,13 +47,14 @@ public class EmployeeServiceImpl implements EmployeeService {
         currentEmployees.setEmail(employees.getEmail());
         currentEmployees.setHomeAddress(employees.getHomeAddress());
         currentEmployees.setPhoneNumber(employees.getPhoneNumber());
+        currentEmployees.setEmployeeDepartment(employees.getEmployeeDepartment());
 
         employeeRepository.save(currentEmployees);
         return currentEmployees;
     }
 
     @Override
-    public void deleteEmployee(Long id) throws RuntimeException {
+    public void deleteEmployee(Integer id) throws RuntimeException {
         //check if the employee data exists in the database and deletes by ID
         if (employeeRepository.existsById(id)){
             employeeRepository.deleteById(id);

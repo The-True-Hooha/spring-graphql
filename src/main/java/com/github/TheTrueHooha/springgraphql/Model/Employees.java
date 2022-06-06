@@ -10,13 +10,12 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "employee data")
 @AllArgsConstructor
 @NoArgsConstructor
 
 public class Employees {
 
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String firstName;
