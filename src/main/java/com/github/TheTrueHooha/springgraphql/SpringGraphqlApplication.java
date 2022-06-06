@@ -1,7 +1,7 @@
-package com.githubTheTrueHooha.springgraphql;
+package com.github.TheTrueHooha.springgraphql;
 
-import com.githubTheTrueHooha.springgraphql.Model.Employees;
-import com.githubTheTrueHooha.springgraphql.Repository.EmployeeRepository;
+import com.github.TheTrueHooha.springgraphql.Model.Employees;
+import com.github.TheTrueHooha.springgraphql.Repository.EmployeeRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

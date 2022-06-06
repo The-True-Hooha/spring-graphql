@@ -1,7 +1,7 @@
-package com.githubTheTrueHooha.springgraphql.Service;
+package com.github.TheTrueHooha.springgraphql.Service;
 
 
-import com.githubTheTrueHooha.springgraphql.Model.Employees;
+import com.github.TheTrueHooha.springgraphql.Model.Employees;
 
 import java.util.List;
 

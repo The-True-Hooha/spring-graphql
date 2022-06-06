@@ -1,8 +1,8 @@
-package com.githubTheTrueHooha.springgraphql.Service.Impl;
+package com.github.TheTrueHooha.springgraphql.Service.Impl;
 
-import com.githubTheTrueHooha.springgraphql.Model.Employees;
-import com.githubTheTrueHooha.springgraphql.Repository.EmployeeRepository;
-import com.githubTheTrueHooha.springgraphql.Service.EmployeeService;
+import com.github.TheTrueHooha.springgraphql.Model.Employees;
+import com.github.TheTrueHooha.springgraphql.Repository.EmployeeRepository;
+import com.github.TheTrueHooha.springgraphql.Service.EmployeeService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

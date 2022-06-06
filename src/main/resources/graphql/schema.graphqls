@@ -1,5 +1,5 @@
 type Employees {
-    id: Int!
+    id: ID!
     firstName: String
     lastName: String
     email: String
@@ -9,12 +9,21 @@ type Employees {
 
 type Query{
     getAllEmployees: [Employees]
-    getEmployeeById(id: Int): Employees
+    getEmployeeById(id: ID!): Employees
 }
 
 type Mutation{
-    addNewEmployee: [Employees]
-    deleteEmployee(id: Int): Employees
-    UpdateEmployee(id: Int): Employees
+    deleteEmployee(id: ID!): Employees
+    UpdateEmployee(id: ID!): Employees
+    addNewEmployee(newEmployee: AddEmployee): Employees
+}
+
+input AddEmployee{
+    id: ID!
+    firstName: String
+    lastName: String
+    email: String
+    homeAddress: String
+    phoneNumber: String
 }
 

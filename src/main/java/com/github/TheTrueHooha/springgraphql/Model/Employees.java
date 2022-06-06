@@ -1,4 +1,4 @@
-package com.githubTheTrueHooha.springgraphql.Model;
+package com.github.TheTrueHooha.springgraphql.Model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

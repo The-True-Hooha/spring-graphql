@@ -1,4 +1,4 @@
-package com.githubTheTrueHooha.springgraphql;
+package com.github.TheTrueHooha.springgraphql;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

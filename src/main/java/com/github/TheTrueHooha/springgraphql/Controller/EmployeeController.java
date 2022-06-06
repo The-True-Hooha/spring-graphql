@@ -1,8 +1,8 @@
-package com.githubTheTrueHooha.springgraphql.Controller;
+package com.github.TheTrueHooha.springgraphql.Controller;
 
-import com.githubTheTrueHooha.springgraphql.Model.AddEmployee;
-import com.githubTheTrueHooha.springgraphql.Model.Employees;
-import com.githubTheTrueHooha.springgraphql.Service.EmployeeService;
+import com.github.TheTrueHooha.springgraphql.Model.AddEmployee;
+import com.github.TheTrueHooha.springgraphql.Model.Employees;
+import com.github.TheTrueHooha.springgraphql.Service.EmployeeService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;
