@@ -41,4 +41,9 @@ public class EmployeeController {
                 newEmployee.homeAddress());
         return employeeService.addNewEmployee(employees);
     }
+
+    @MutationMapping
+    public void deleteEmployee(@Argument Integer id){
+        employeeService.deleteEmployee(id);
+    }
 }
