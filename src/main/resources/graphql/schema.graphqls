@@ -13,7 +13,7 @@ type Query{
 }
 
 type Mutation{
-    deleteEmployee(id: ID!): Employees
+    deleteEmployee(id: ID!): Boolean
     UpdateEmployee(id: ID!): Employees
     addNewEmployee(newEmployee: AddEmployee): Employees
 }
@@ -26,4 +26,5 @@ input AddEmployee{
     homeAddress: String
     phoneNumber: String
 }
+
 

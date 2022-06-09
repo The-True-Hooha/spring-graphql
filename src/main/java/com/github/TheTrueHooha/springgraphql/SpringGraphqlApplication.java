@@ -4,13 +4,10 @@ import com.github.TheTrueHooha.springgraphql.Model.Employees;
 import com.github.TheTrueHooha.springgraphql.Repository.EmployeeRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-@EnableAutoConfiguration(exclude = BatchAutoConfiguration.class)
 public class SpringGraphqlApplication {
 
 	public static void main(String[] args) {
